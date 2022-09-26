@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=1400"><!--다른 매체에서도 너비 오류 없이 볼 수 있게-->
+  <link href="./images/favicon.png" rel="icon" type="image/png" sizes="32x32" ><!--파비콘-->
+  <title>코르콕</title>
+  <link href="./css/scroll-fixed.css" rel="stylesheet" type="text/css"><!--네비 스크롤 고정 수정o-->
+  <link rel="stylesheet" href="./css/order.css"><!--구매 수량 수정o-->
+  <link rel="stylesheet" href="css/tab2.css"><!--탭 메뉴 수정o-->
+  <link rel="stylesheet" href="./css/style_sub2_2.css">
+</head>
+<body>
+
+  <div id="top"><!--탑-->
+    <p class="t_left">
+      <a href="https://ko-kr.facebook.com/"><img src="./images/sns_facebook.png" alt="facebook"></a>
+      <a href="https://www.instagram.com/"><img src="./images/sns_instagram.png" alt="instagram"></a>
+      <a href="https://www.youtube.com/"><img src="./images/sns_youtube.png" alt="youtube"></a>
+      <a href="https://twitter.com/?lang=ko"><img src="./images/sns_twitter.png" alt="twitter"></a>
+    </p>
+    <a href="./index.html" class="t_logo"><img src="./images/logo.png" alt="corkock logo"></a>
+    <p class="t_right">
+      <a href="#none">로그인</a>
+      <a href="#none">회원가입</a>
+      <a href="#none">고객센터</a>
+    </p>
+  </div><!--탑-->
+
+  <div id="header" class="scroll-menu"><!--헤더-->
+    <ul class="nav">
+      <li><a href="./sub1-1.html">코르콕</a>
+        <ul class="sub">
+          <li><a href="./sub1-1.html">브랜드<span></span></a></li>
+          <li><a href="./sub1-2.html">오프라인 바<span></span></a></li>
+        </ul>
+      </li>
+      <li><a href="./sub2-1.html">와인</a>
+        <ul class="sub">
+          <li><a href="#none">레드<span></span></a></li>
+          <li><a href="#none">로제<span></span></a></li>
+          <li><a href="#none">화이트<span></span></a></li>
+          <li><a href="#none">스파클링<span></span></a></li>
+          <li><a href="#none">코르콕 수제<span></span></a></li>
+        </ul>
+      </li>
+      <li><a href="./sub3-1.html">굿즈</a>
+        <ul class="sub">
+          <li><a href="#none">와인 용품<span></span></a></li>
+          <li><a href="#none">음식<span></span></a></li>
+          <li><a href="#none">굿즈<span></span></a></li>
+        </ul>
+      </li>
+      <li><a href="./sub4-1.html">커뮤니티</a>
+        <ul class="sub">
+          <li><a href="./sub4-1.html">이벤트 & 소식<span></span></a></li>
+          <li><a href="./sub4-2.html">QnA<span></span></a></li>
+          <li><a href="./sub4-3.html">오프라인 바 예약<span></span></a></li>
+        </ul>
+      </li>
+    </ul>
+  </div><!--헤더-->
+
+  <div id="wine"><!--와인-->
+    <div class="wine"><!--이미지탭-->
+        <div class="wine_main">
+          <img src="./images/wine_page1.jpg" alt="코코 모스카토">
+          <img src="./images/wine_page2.jpg" alt="코코 브라케토">
+          <img src="./images/wine_page3.jpg" alt="코코 브라케토">
+          <img src="./images/wine_page4.jpg" alt="코코 브라케토">
+        </div>
+        <div class="wine_button wrap">
+          <a href="#none"><img src="./images/wine_page_mini1.jpg" alt="코코 모스카토"></a>
+          <a href="#none"><img src="./images/wine_page_mini2.jpg" alt="코코 모스카토"></a>
+          <a href="#none"><img src="./images/wine_page_mini3.jpg" alt="코코 모스카토"></a>
+          <a href="#none"><img src="./images/wine_page_mini4.jpg" alt="코코 모스카토"></a>
+        </div>
+    </div><!--이미지탭-->
+    <div class="wine_text"><!--구매-->
+      <h1>[코르콕] 코코 모스카토</h1>
+      <h2>[Corkock] Coco Moscato</h2>
+      <div class="star">
+        <img src="./images/star1.png" alt="별점 1점">
+        <img src="./images/star1.png" alt="별점 1점">
+        <img src="./images/star1.png" alt="별점 1점">
+        <img src="./images/star1.png" alt="별점 1점">
+        <img src="./images/star2.png" alt="별점 반점">
+        <p>4.8 / 5 (제품 후기: 127)</p>
+      </div>
+      <h1 class="money">\7,000</h1>
+      <div class="input">
+        <input type="button" value="-" id="minus" onclick="minus()">
+        <input type="text" size="25" value="1" id="count">
+        <input type="button" value="+" id="plus" onclick="plus()">
+      </div>
+      <a href="#none" class="heart">
+        <img src="./images/heart4.png" alt="찜">
+        <img src="./images/heart5.png" alt="찜">
+        <p>찜하기</p>
+      </a>
+      <div class="cart">
+        <img src="./images/cart4.png" alt="구매">
+        <img src="./images/cart5.png" alt="구매">
+        <p>바로 구매하기</p>
+      </div>
+      <div class="info">
+        <p>배송비: 3,000원(50,000원 이상 주문시 무료)</p>
+        <p>포인트적립: 한잔2%, 두잔3%, 세잔5%</p>
+      </div>
+    </div><!--구매-->
+  </div><!--와인-->
+
+  <div id="tab"><!--탭-->
+    <ul class="tabnav">
+      <li><a href="#tab01">제품 정보</a></li>
+			<li><a href="#tab02">자세히 알아보기</a></li>
+			<li><a href="#tab03">제품 후기</a></li>
+    </ul>
+    <div class="tabcontent">
+
+			<div id="tab01"><!--정보-->
+        <h1>간단하게 알아보기</h1>
+        <p class="tab01_box">투명한 황금빛이 특징인 화이트 와인입니다. 입 안 가득 느껴지는 달콤함 속<br>
+        부드럽게 터지는 기포가 새콤해 피니시까지 깔끔합니다.<br>
+        잘 익은 과일에서만 맡을 수 있는 달달한 꿀 향에 사과 향이 레이어됐습니다.<br>
+        마냥 달기만 하지 않고 부드럽게 새콤한 바디감까지 완벽하게 챙긴 와인입니다.</p>
+        <p class="tab01_left">
+          <span>타입:</span> 화이트 와인<br>
+          <span>원산지, 와이너리:</span> 대한민국>경북 김천, 코르콕<br>
+          <span>품종:</span> 모스카토 100%<br>
+          <span>용량, 도수:</span> 250ml, 7%<br>
+          <span>추천 음식:</span> 치즈, 소세지, 과일, 쿠키
+        </p>
+        <p class="tab01_right">
+          <span>당도:</span> ○○○○●<br>
+          <span>산도:</span> ○○○●○<br>
+          <span>바디:</span> ○●○○○
+        </p>
+      </div><!--정보-->
+
+			<div id="tab02"><!--상세-->
+        <img src="./images/wine_fullpage.jpg" alt="코코 모스카토 상세페이지">
+      </div><!--상세-->
+
+			<div id="tab03"><!--후기-->
+        <h1>고객님들의 소중한 후기입니다!</h1>
+        <img src="./images/review_chara.png" alt="후기 코코">
+        <div class="review">
+          <img src="./images/review_text1.png" alt="후기">
+          <img src="./images/review_text2.png" alt="후기">
+          <img src="./images/review_text3.png" alt="후기">
+          <img src="./images/review_text4.png" alt="후기">
+          <img src="./images/review_text5.png" alt="후기">
+          <img src="./images/review_text6.png" alt="후기">
+        </div>
+      </div><!--후기--> 
+		</div>
+  </div><!--탭-->
+  
+  <div id="footer"><!--푸터-->
+    <div class="footer_inner">
+      <img src="./images/footer_coco.png" alt="코코" class="footer_coco">
+      <p>
+        <a href="#none">개인정보처리방침</a>
+        <a href="#none">영상정보처리기기 운영·처리방침</a>
+        <a href="#none">CONTECT US</a><br>
+        컴퍼니: 코르콕 / 오너: 제 민 / 본사 주소: 부산광역시 중구 중앙대로 26 다원중앙타워 9층<br>
+        본사 전화번호: 055-7152-6483 / 사업자 등록번호: 123-45-67890<br>
+        COPYRIGHT: ⓒby corkock All Rights Reserved.<br>
+      </p>
+    </div>
+  </div><!--푸터-->
+
+  <a href="#" class="top_button"><img src="./images/top_button.png" alt="탑 버튼"></a>
+
+  <!--제이쿼리 연결-->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <!--제이쿼리 연결-->
+  <script src="script/scroll-fixed.js"></script><!--네비 스크롤 고정 수정o-->
+  <script src="./script/menu.js"></script><!--서브메뉴 슬라이드 수정o-->
+  <script src="./script/icon.js"></script><!--탑 버튼 수정o-->
+  <script src="./script/popup1.js"></script><!--팝업 수정o-->
+  <script src="./script/order.js"></script><!--구매 수량 수정o-->
+	<script src="script/tab.js"></script><!--탭 메뉴 수정o-->
+
+</body>
+</html>

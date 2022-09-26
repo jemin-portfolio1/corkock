@@ -1,0 +1,39 @@
+/*팝업 꾸미기*/
+.popup{/*화면전체 배경*/
+    position: fixed;
+    width: 1320px;
+    height: 800px;
+    top: 50%;
+    margin-top: -400px;
+    left: 50%;
+    margin-left: -660px;
+    background-color: #c0935cb0;
+    display: none;
+    z-index: 3;
+}
+.popup> div{/*가운데 창*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.popup img{
+    display: block;
+}
+.close{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+.close a{
+    display: inline-block;
+}
+.close a:nth-child(2){
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0;
+}
+.close:hover a:nth-child(2){
+    opacity: 1;
+}

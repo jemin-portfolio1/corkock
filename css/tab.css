@@ -1,0 +1,49 @@
+/* 탭메뉴 꾸미기 */
+.tab{
+  width: 100%;
+}
+.tabnav{
+  width:620px;
+  margin: auto;
+  overflow: hidden;
+}
+.tabnav li{
+  float: left;
+  width: 50%;  
+}
+.tabnav li a{ 
+  display: block;
+  font-size: 20px;
+  font-family: 'Cafe24Ssurround';
+  color: #bd5da4;
+  padding: 10px 100px;
+  border:3px solid #bd5da4;
+  position: relative;
+  z-index: 2;
+}
+.tabnav li:nth-child(1) a{
+  border-radius: 30px 0 0 0;
+}
+.tabnav li:nth-child(2) a{
+  border-radius: 0 30px 0 0;
+}
+
+/* 탭메뉴 클릭했을 때 변화 꾸미기 */
+.tabnav li .active{
+  border: 3px solid #bd5da4;
+}
+.tabnav li a:hover,
+.tabnav li a.active{
+  background:#bd5da4; 
+  color:#f9f6ed; 
+}
+
+/* 탭컨테츠 꾸미기 */
+.tabcontent{
+  width: 100%;
+  height: 340px;
+  padding: 20px 0;
+  background-color: #bd5da4;
+  position: relative;
+  top: -3px;
+}

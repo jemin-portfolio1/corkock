@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=1400"><!--다른 매체에서도 너비 오류 없이 볼 수 있게-->
+  <link href="./images/favicon.png" rel="icon" type="image/png" sizes="32x32" ><!--파비콘-->
+  <title>코르콕</title>
+  <link href="./css/scroll-fixed.css" rel="stylesheet" type="text/css"><!--네비 스크롤 고정 수정o-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style_sub4_3.css">
+</head>
+<body>
+
+  <div id="top"><!--탑-->
+    <p class="t_left">
+      <a href="https://ko-kr.facebook.com/"><img src="./images/sns_facebook.png" alt="facebook"></a>
+      <a href="https://www.instagram.com/"><img src="./images/sns_instagram.png" alt="instagram"></a>
+      <a href="https://www.youtube.com/"><img src="./images/sns_youtube.png" alt="youtube"></a>
+      <a href="https://twitter.com/?lang=ko"><img src="./images/sns_twitter.png" alt="twitter"></a>
+    </p>
+    <a href="./index.html" class="t_logo"><img src="./images/logo.png" alt="corkock logo"></a>
+    <p class="t_right">
+      <a href="#none">로그인</a>
+      <a href="#none">회원가입</a>
+      <a href="#none">고객센터</a>
+    </p>
+  </div><!--탑-->
+
+  <div id="header" class="scroll-menu"><!--헤더-->
+    <ul class="nav">
+      <li><a href="./sub1-1.html">코르콕</a>
+        <ul class="sub">
+          <li><a href="./sub1-1.html">브랜드<span></span></a></li>
+          <li><a href="./sub1-2.html">오프라인 바<span></span></a></li>
+        </ul>
+      </li>
+      <li><a href="./sub2-1.html">와인</a>
+        <ul class="sub">
+          <li><a href="#none">레드<span></span></a></li>
+          <li><a href="#none">로제<span></span></a></li>
+          <li><a href="#none">화이트<span></span></a></li>
+          <li><a href="#none">스파클링<span></span></a></li>
+          <li><a href="#none">코르콕 수제<span></span></a></li>
+        </ul>
+      </li>
+      <li><a href="./sub3-1.html">굿즈</a>
+        <ul class="sub">
+          <li><a href="#none">와인 용품<span></span></a></li>
+          <li><a href="#none">음식<span></span></a></li>
+          <li><a href="#none">굿즈<span></span></a></li>
+        </ul>
+      </li>
+      <li><a href="./sub4-1.html">커뮤니티</a>
+        <ul class="sub">
+          <li><a href="./sub4-1.html">이벤트 & 소식<span></span></a></li>
+          <li><a href="./sub4-2.html">QnA<span></span></a></li>
+          <li><a href="./sub4-3.html">오프라인 바 예약<span></span></a></li>
+        </ul>
+      </li>
+    </ul>
+  </div><!--헤더-->
+
+  <div id="commu"><!--커뮤니티-->
+    <video src="./images/commu_banner.mp4" autoplay loop  muted playsinline width="100%"></video>
+    <ul class="commu">
+        <li><a href="./sub4-1.html">이벤트&소식</a></li>
+        <li><a href="./sub4-2.html">QnA</a></li>
+        <li class="commu_on"><a href="#none">오프라인 바 예약하기</a></li>
+    </ul>
+  </div><!--커뮤니티-->
+
+  <div id="room"><!--룸-->
+    <h1>프라이빗 룸에서 즐거운 시간을 보내세요!</h1>
+    <div class="room_inner">
+      <div class="room">
+        <img src="./images/room1.jpg" alt="레드 룸 이미지">
+        <img src="./images/room_text1.png" alt="레드 룸 설명">
+      </div>
+      <div class="room">
+        <img src="./images/room2.jpg" alt="로제 룸 이미지">
+        <img src="./images/room_text2.png" alt="로제 룸 설명">
+      </div>
+      <div class="room">
+        <img src="./images/room3.jpg" alt="화이트 룸 이미지">
+        <img src="./images/room_text3.png" alt="화이트 룸 설명">
+      </div>
+    </div> 
+  </div><!--룸-->
+
+  <div id="form"><!--폼-->
+    <div class="step step1" data-aos="flip-up">
+      <h2>Step.1<br>
+      어떤 룸을 예약하시나요?</h2>
+      <div class="step1_inner">
+        <label><input type="radio" name="room" checked>레드</label>
+        <label><input type="radio" name="room">로제</label>
+        <label><input type="radio" name="room">화이트</label>
+      </div>
+    </div>
+    <div class="next" data-aos="flip-up">
+      <img src="./images/next.png" alt="다음">
+    </div>
+    <div class="step step2" data-aos="flip-up">
+      <h2>Step.2<br>
+      몇분이서 예약하시나요?</h2>
+      <input type="button" value="-" id="minus" onclick="minus()">
+      <input type="text" size="16" value="2" id="count">
+      <input type="button" value="+" id="plus" onclick="plus()">
+    </div>
+    <div class="next" data-aos="flip-up">
+      <img src="./images/next.png" alt="다음">
+    </div>
+    <div class="step step3" data-aos="flip-up">
+      <h2>Step.3<br>
+      언제 예약하시나요?</h2>
+      <input type="datetime-local">
+    </div>
+    <div class="next" data-aos="flip-up">
+      <img src="./images/next.png" alt="다음">
+    </div>
+    <div class="step step4" data-aos="flip-up">
+      <h2>Step.4<br>
+      어떤 코스로 예약하시나요?</h2>
+      <div class="step4_inner">
+        <label><input type="radio" name="menu" checked>A코스: 한우채끝 스테이크</label>
+        <label><input type="radio" name="menu">B코스: 양갈비 스테이크</label>
+        <label><input type="radio" name="menu">C코스: 푸아그라</label>
+      </div>
+      <p>오늘의 샐러드 > 화이트 아스파라거스 전복구이 > 대게라비올라 > 미니리퓨레 생선구이 > 고르곤소스 치킨<br>
+      > 모듬채소구이+<b>코스</b> > 오늘의 디저트</p>
+      <p><span>*재고 상황에 따라 메뉴가 변동 될 수 있습니다.</span></p>
+    </div>
+    <div class="next" data-aos="flip-up">
+      <img src="./images/next.png" alt="다음">
+    </div>
+    <div class="button" data-aos="zoom-in">
+      <a href="./sub5-1.html">예약하기</a>
+    </div>
+  </div><!--폼-->
+  
+  <div id="footer"><!--푸터-->
+    <div class="footer_inner">
+      <img src="./images/footer_coco.png" alt="코코" class="footer_coco">
+      <p>
+        <a href="#none">개인정보처리방침</a>
+        <a href="#none">영상정보처리기기 운영·처리방침</a>
+        <a href="#none">CONTECT US</a><br>
+        컴퍼니: 코르콕 / 오너: 제 민 / 본사 주소: 부산광역시 중구 중앙대로 26 다원중앙타워 9층<br>
+        본사 전화번호: 055-7152-6483 / 사업자 등록번호: 123-45-67890<br>
+        COPYRIGHT: ⓒby corkock All Rights Reserved.<br>
+      </p>
+    </div>
+  </div><!--푸터-->
+
+  <a href="#" class="top_button"><img src="./images/top_button.png" alt="탑 버튼"></a>
+
+  <!--제이쿼리 연결-->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <!--제이쿼리 연결-->
+  <script src="script/scroll-fixed.js"></script><!--네비 스크롤 고정 수정o-->
+  <script src="./script/menu.js"></script><!--서브메뉴 슬라이드 수정o-->
+  <script src="./script/icon.js"></script><!--탑 버튼 수정o-->
+  <script src="./script/order.js"></script><!--인원 추가 수정x-->
+  <!--aos-->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script><!-- aos 라이브러리 -->
+	<script src="script/aos.js"></script><!-- aos 소스 -->
+
+</body>
+</html>
